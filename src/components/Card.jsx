@@ -6,7 +6,11 @@ const Card = ({ course }) => {
       {/* <div className="max-w-[720px] mx-auto"> */}
       <div className="relative flex h-full w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
         <div className="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
-          <img src={course?.image_url} alt={course?.course_name} />
+          <img
+            src={course?.image_url}
+            loading="lazy"
+            alt={course?.course_name}
+          />
           <div className="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-b from-transparent via-transparent to-black/75"></div>
           {/* heart button */}
           {/* <button
