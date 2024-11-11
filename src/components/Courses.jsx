@@ -29,8 +29,6 @@ const Courses = ({ searchTerm }) => {
       const totalRecords = data.totalRecords;
       setTotalPages(Math.ceil(totalRecords / pageSize));
     }
-
-    console.log(data);
   }, [data, pageSize]);
 
   if (isLoading) {
