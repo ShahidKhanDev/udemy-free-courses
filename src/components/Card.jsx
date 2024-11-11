@@ -163,6 +163,8 @@ const Card = ({ course }) => {
         <div className="p-6 pt-3">
           <a
             href={course?.link}
+            target="_blank"
+            rel="noopener noreferer"
             className="flex items-center justify-center w-full h-10 px-3 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-lg select-none font-inter me-3 hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700"
             type="button"
           >
